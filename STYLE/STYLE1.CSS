@@ -1,0 +1,53 @@
+.card{
+            background-color: white;
+            color:#333;
+            border: 2px solid #ccc;
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: #ccc; */
+            border-radius: 10px;
+            padding: 16px;
+            margin: 30px 0px;
+            box-shadow: 0px 2px 6px rgba(252, 5, 5, 0.937);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    } 
+        
+    .card:hover{
+            box-shadow: 0px 4px 12px rgba(35, 186, 98, 0.9); 
+            transform: scale(1.02);
+            
+        }
+
+       .page-title{
+        font-family : 'Arial', sans-serif;
+        color: #3b0c5f;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        letter-spacing: 2px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        
+    }
+    .page-tagline{
+        text-align: center;
+        font-style: oblique;
+        color: #9e0909;
+        transform: scale(1.02);
+    }
+.button{
+    display: inline-block; 
+    background-color: #00695c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover{
+    background-color: #3b1f65;
+    transform: scale(1.1);
+}
+.Status-bar{
+    <span>📍 Launching from: Napa Valley Terminal</span>
+<span>🕒 Open Hours: 5:00 AM - 8:00 PM Daily</span>
+}
