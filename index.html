@@ -4,84 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celtic Cloud Hoppers</title>
-    
-    <link rel="stylesheet" href ="STYLE/STYLE1.CSS">
-    </head>
-<body style="background-color:lightblue">
-    <nav>
-        <div class="card">🍀 Celtic Cloud Hoppers</div>
-        <ul>
+    <link rel="stylesheet" href="STYLE/style3.css">
+</head>
+<body>
+
+<header class="site-header" id="home">
+    <nav class="navbar">
+        <div class="brand">
+            <span class="logo">🍀</span>
+            <span class="brand-name">Celtic Cloud Hoppers</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#experience">The Experience</a></li>
             <li><a href="#safety">Safety & Fleet</a></li>
-           <li><a href="#booking">Book a Flight</a></li>
-           <li><a href="#location">Location</a></li>
+            <li><a href="#booking">Book a Flight</a></li>
+            <li><a href="#location">Location</a></li>
         </ul>
-        </div>
-    <nav>
-        
-    <div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
             <h1>Ireland From Above</h1>
-            <p>Experience the magic of the Emerald Isle at sunrise. Fully Licensed & Insured.</p>
-            <div>
-                <a href="#booking">View Packages</a>
-                <a href="#experience">Our Locations</a>
+            <p>Experience the magic of the Emerald Isle at sunrise. Fully licensed & insured.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#booking">View Packages</a>
+                <a class="btn ghost" href="#experience">Our Locations</a>
             </div>
-        
-             
-<section>
-      <section id="experience" class="card-container">
-        <div class="card">
-        <h2>Historic Irish Flight Paths</h2>
-            <div>
-                <img src="IMIAGES/ballonflight.png" alt="Boyne Valley">
-                <h3>Boyne Valley</h3>
-                <p>Drift over Newgrange and the Hill of Tara. A journey through 5,000 years of history.</p>
+        </div>
+    </section>
+</header>
+
+<main>
+    <section id="experience" class="section section-light">
+        <div class="section-heading">
+            <h2>The Experience</h2>
+            <p>Choose from our most loved historic and scenic flight paths across Ireland.</p>
+        </div>
+
+        <div class="card-grid">
+            <article class="card">
+                <img src="IMIAGES/ballonflight.png" alt="Hot air balloon over Boyne Valley">
+            
+                <div class="card-body">
+                    <h3>Boyne Valley</h3>
+                    <p>Drift over Newgrange and the Hill of Tara for a journey through 5,000 years of history.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="IMIAGES/LAKE.PNG"Balloon over the lakes of Killarney">
+                <div class="card-body">
+                    <h3>Killarney</h3>
+                    <p>Soar above the Ring of Kerry and the jagged peaks of MacGillycuddy’s Reeks at golden hour.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="safety" class="section section-dark">
+        <div class="section-content">
+            <h2>Safety & Fleet</h2>
+            <p>Our pilots are fully certified, with thousands of flight hours and a spotless safety record.</p>
+            <p>Each balloon in our fleet is inspected before every flight and maintained to international standards.</p>
+        </div>
+    </section>
+
+    <section id="booking" class="section section-light">
+        <div class="section-heading">
+            <h2>Book a Flight</h2>
+            <p>Tell us when and where you’d like to fly, and we’ll take care of the rest.</p>
+        </div>
+
+        <form class="booking-form">
+            <div class="form-row">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-           </section>
-           <section>
-           <section id="location" class="card-container">
-            <div class="card">
-                <img src="IMIAGES/LAKE.PNG" alt="Killarney Lakes">
-                <h3>Killarney  <p>Soar over the Ring of Kerry and the jagged peaks of MacGillycuddy’s Reeks.
 
-        
+            <div class="form-row">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row">
+                <label for="date">Preferred date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-row">
+                <label for="location-select">Flight location</label>
+                <select id="location-select" name="location">
+                    <option value="">Select a location</option>
+                    <option value="boyne">Boyne Valley</option>
+                    <option value="killarney">Killarney</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="notes">Special requests</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Occasion, accessibility needs, or preferences"></textarea>
+            </div>
+
+            <button type="submit" class="btn primary full-width">Request Booking</button>
+        </form>
+    </section>
+
+    <section id="location" class="section section-dark">
+        <div class="section-content">
+            <h2>Where to Find Us</h2>
+            <p>We operate from carefully chosen launch sites across Leinster and Munster for ideal wind and weather conditions.</p>
+            <p>Exact meeting points are shared 24 hours before your flight to match the best available sunrise location.</p>
+        </div>
+    </section>
+</main>
+<img src="IMIAGES/ballonflight.png" alt="">
+<footer class="site-footer">
+    <p>© 2026 Celtic Cloud Hoppers. All rights reserved.</p>
+</footer>
+
+<script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-open');
+    });
+</script>
+
+</body>
+</html>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
 
 
     
-
-
 
 </body>
 </html>
